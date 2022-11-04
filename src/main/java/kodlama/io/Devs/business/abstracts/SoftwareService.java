@@ -10,16 +10,18 @@ import kodlama.io.Devs.core.utilities.exceptions.SoftwareNotFoundException;
 import kodlama.io.Devs.entities.concretes.Software;
 
 public interface SoftwareService {
-	Software addSoftware(Software software)
-			throws SoftwareIdNotEqualException, SoftwareNameNotEqualException, SoftwareNameNotEmptyException,
-			SoftwareIdNotEmptyException;
+	Software addSoftware(Software software) throws Exception;
+//			throws SoftwareIdNotEqualException, SoftwareNameNotEqualException, SoftwareNameNotEmptyException,
+//			SoftwareIdNotEmptyException;
 
-	Software updateSoftware(Software software)
-			throws SoftwareNotFoundException, SoftwareIdNotEmptyException, SoftwareNameNotEmptyException;
+	Software updateSoftware(Software software) throws Exception;
+//			throws SoftwareNotFoundException, SoftwareIdNotEmptyException, SoftwareNameNotEmptyException;
 
-	Software getSoftwareById(int softwareId) throws SoftwareNotFoundException, SoftwareIdNotEmptyException;
+	Software getSoftwareById(int softwareId) throws Exception;
+//			throws SoftwareNotFoundException, SoftwareIdNotEmptyException;
 
-	void deleteSoftwareById(int softwareId) throws SoftwareIdNotEmptyException, SoftwareNotFoundException;
+	void deleteSoftwareById(int softwareId) throws Exception;
+//			throws SoftwareIdNotEmptyException, SoftwareNotFoundException;
 
 	List<Software> getAllSoftware();
 }

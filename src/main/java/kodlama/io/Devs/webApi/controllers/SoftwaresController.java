@@ -26,26 +26,27 @@ public class SoftwaresController {
 	private SoftwareService softwareService;
 
 	@PostMapping("/addsoftware")
-	public Software addSoftware(@RequestBody Software software) throws SoftwareIdNotEqualException,
-			SoftwareNameNotEqualException, SoftwareNameNotEmptyException, SoftwareIdNotEmptyException {
+	public Software addSoftware(@RequestBody Software software) throws Exception {
+//			throws SoftwareIdNotEqualException,
+//			SoftwareNameNotEqualException, SoftwareNameNotEmptyException, SoftwareIdNotEmptyException {
 		return softwareService.addSoftware(software);
 	}
 
 	@PostMapping("/updatesoftware")
-	public Software updateSoftware(@RequestBody Software software)
-			throws SoftwareNotFoundException, SoftwareIdNotEmptyException, SoftwareNameNotEmptyException {
+	public Software updateSoftware(@RequestBody Software software) throws Exception {
+//			throws SoftwareNotFoundException, SoftwareIdNotEmptyException, SoftwareNameNotEmptyException {
 		return softwareService.updateSoftware(software);
 	}
 
 	@GetMapping("/getsoftwarebyid")
-	public Software getSoftwareById(@RequestParam int softwareId)
-			throws SoftwareNotFoundException, SoftwareIdNotEmptyException {
+	public Software getSoftwareById(@RequestParam int softwareId) throws Exception {
+//			throws SoftwareNotFoundException, SoftwareIdNotEmptyException {
 		return softwareService.getSoftwareById(softwareId);
 	}
 
 	@PostMapping("/deletesoftwarebyid")
-	public void deleteSoftwareById(@RequestBody int softwareId)
-			throws SoftwareIdNotEmptyException, SoftwareNotFoundException {
+	public void deleteSoftwareById(@RequestBody int softwareId) throws Exception {
+//			throws SoftwareIdNotEmptyException, SoftwareNotFoundException {
 		softwareService.deleteSoftwareById(softwareId);
 	}
 
