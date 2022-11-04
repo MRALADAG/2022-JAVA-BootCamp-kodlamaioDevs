@@ -1,8 +1,8 @@
 package kodlama.io.Devs.core.utilities;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import java.util.List;
 import kodlama.io.Devs.core.utilities.exceptions.SoftwareIdNotEmptyException;
 import kodlama.io.Devs.core.utilities.exceptions.SoftwareIdNotEqualException;
 import kodlama.io.Devs.core.utilities.exceptions.SoftwareNameNotEmptyException;
@@ -61,28 +61,3 @@ public class CheckValidityForSoftware {
 	}
 
 }
-
-//public class CheckValidityForSoftware {
-//
-//	public static Exception isValid(List<Exception> logics) throws Exception {
-//		for (Exception error : logics) {
-//				if (error!=null) {
-//					throw error;
-//				}
-//			
-//		}
-//
-//		return null;
-//	}
-//	return new HashMap<Boolean, Exception>() {
-///	**
-// 	* 
-// 	*/
-//	private static final long serialVersionUID = -1311692485648063892L;
-//
-//		{
-//			put(true, null);
-//		}
-//	};
-//
-//}
